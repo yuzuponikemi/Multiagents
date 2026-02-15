@@ -1,0 +1,21 @@
+# Maps agent roles to relevant arc42 sections
+software_architect:
+  - 01_introduction.md
+  - 05_building_blocks.md
+  - 09_architecture_decisions.md
+
+firmware_engineer:
+  - 01_introduction.md
+  - 05_building_blocks.md
+
+ghost:
+  - 01_introduction.md
+  - 05_building_blocks.md
+  - 09_architecture_decisions.md
+
+coder:
+  - 05_building_blocks.md
+
+analyst:
+  - 01_introduction.md
+  - 05_building_blocks.md
