@@ -19,7 +19,7 @@ class Settings(BaseSettings):
 
     # Ollama
     ollama_base_url: str = "http://localhost:11434"
-    ollama_model: str = "qwen2.5:14b"
+    ollama_model: str = "qwen3-next:latest"
 
     # Phoenix
     phoenix_enabled: bool = True
