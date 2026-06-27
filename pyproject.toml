@@ -10,7 +10,7 @@ requires-python = ">=3.11"
 dependencies = [
     "langchain-core>=0.3,<0.4",
     "langchain-ollama>=0.3,<0.4",
-    "langgraph>=0.4,<0.5",
+    "langgraph>=0.4",
     "langgraph-checkpoint>=2.0,<3.0",
     "pydantic>=2.0,<3.0",
     "pydantic-settings>=2.0,<3.0",
@@ -21,6 +21,13 @@ dependencies = [
     "opentelemetry-api>=1.20",
     "opentelemetry-sdk>=1.20",
     "typer>=0.12",
+]
+
+[project.optional-dependencies]
+# Workspace integration: Agent runtime (test-smith) for tool-using
+# personas. Import direction is one-way: multiagents → test_smith.
+react = [
+    "test-smith @ git+https://github.com/yuzuponikemi/test-smith.git",
 ]
 
 [dependency-groups]
